@@ -6,7 +6,7 @@
   <script type="text/babel">
     function Greeting() {
       const [name, setName] = React.useState(
-        window.localStorage.getItem('name') || '',
+        window.localStorage.getItem('name') || '',/*Update the value of name from the one present in localstorage,if nothing present then update it as empty string*/
       )
 
       React.useEffect(() => {
